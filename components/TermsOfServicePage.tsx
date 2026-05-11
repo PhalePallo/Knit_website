@@ -262,7 +262,7 @@ const TermsOfServicePage: React.FC = () => {
                                         <p className="leading-relaxed">
                                             <strong>11.2 Nothing in these Website Terms limits liability that cannot lawfully be excluded.</strong>
                                         </p>
-                                    </div>
+                                    </h2>
                                 </div>
 
                                 {/* Section 12 */}
