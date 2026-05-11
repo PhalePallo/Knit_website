@@ -1,0 +1,104 @@
+/* Main CSS file for Knit AI Financial Infrastructure */
+
+/* Base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+html {
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grid-bg {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px);
+}
+
+.terminal-text {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.bg-flow-gradient {
+  background: linear-gradient(90deg, transparent 0%, #94a3b8 50%, transparent 100%);
+  background-size: 200% 100%;
+}
+
+/* Component-specific styles */
+.prose {
+  max-width: none;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-brand-950 mb-6;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-brand-900 mb-4;
+}
+
+.prose p {
+  @apply leading-relaxed text-slate-600;
+}
+
+.prose ul {
+  @apply list-disc list-inside space-y-2 text-slate-600;
+}
+
+.prose ol {
+  @apply list-decimal list-inside space-y-2 text-slate-600;
+}
+
+.prose a {
+  @apply text-brand-600 hover:text-brand-700 underline;
+}
+
+.prose strong {
+  @apply font-semibold text-brand-950;
+}
+
+/* Scroll animations */
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes flow {
+  0% { background-position: 0 0; }
+  100% { background-position: 20px 0; }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-flow {
+  animation: flow 1.5s linear infinite;
+}
