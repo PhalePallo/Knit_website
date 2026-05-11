@@ -195,7 +195,7 @@ const LandingPage: React.FC = () => {
                                                 { src: "/willow-view-logo.png", alt: "Willow View Academy" },
                                                 { src: "/palmview-logo.png", alt: "Palmview State Primary School" },
                                                 { src: "/molo-mhlaba-logo.png", alt: "Molo Mhlaba" },
-                                                { src: "/maseala-logo.png?v=20240511", alt: "Maseala" }
+                                                { src: "/maseala-logo-v2.png", alt: "Maseala" }
                                             ].map((logo, index) => (
                                                 <img
                                                     key={index}
