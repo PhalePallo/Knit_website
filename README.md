@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/knit-logo.png" alt="Knit Logo" width="200" />
+  <img src="https://raw.githubusercontent.com/PhalePallo/Knit_website/main/public/knit-logo.png" alt="Knit Logo" width="200" />
   <h1>Knit - AI Financial Infrastructure</h1>
   <p>Next-generation financial infrastructure for schools and businesses powered by AI</p>
 </div>
