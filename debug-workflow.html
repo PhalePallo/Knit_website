@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Knit Workflow Demo</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { font-family: system-ui; padding: 20px; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px; border-radius: 5px; }
+        .error { background: #ffe0e0; color: #d00; }
+        .success { background: #e0ffe0; color: #080; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+        
+        function DebugComponent() {
+            const [status, setStatus] = useState('Checking...');
+            const [errors, setErrors] = useState([]);
+            
+            useEffect(() => {
+                // Check for common issues
+                const checks = [];
+                
+                // Check React version
+                if (React.version) {
+                    checks.push(`React version: ${React.version}`);
+                } else {
+                    checks.push('React version check failed');
+                }
+                
+                // Check for required features
+                if (typeof useState !== 'function') {
+                    setErrors(prev => [...prev, 'useState not available']);
+                }
+                if (typeof useEffect !== 'function') {
+                    setErrors(prev => [...prev, 'useEffect not available']);
+                }
+                
+                setStatus('Checks completed');
+            }, []);
+            
+            return (
+                <div>
+                    <h2>Knit Workflow Demo Debug</h2>
+                    <div className="debug">Status: {status}</div>
+                    {errors.map((error, i) => (
+                        <div key={i} className="debug error">{error}</div>
+                    ))}
+                    <div className="debug success">
+                        If you see this message, basic React is working.
+                        The workflow demo should work if there are no errors above.
+                    </div>
+                </div>
+            );
+        }
+        
+        ReactDOM.render(<DebugComponent />, document.getElementById('root'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.knit.cash/sitemap.xml
+
+# Block common non-content paths
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /*.json$
+Disallow: /*.ts$
+Disallow: /*.tsx$

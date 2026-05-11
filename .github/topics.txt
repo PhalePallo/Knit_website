@@ -1,0 +1,15 @@
+ai-financial-infrastructure
+payment-recovery
+risk-assessment
+school-management
+business-automation
+typescript
+react
+tailwindcss
+fintech
+edtech
+south-africa
+compliance
+automation
+dashboard
+analytics
