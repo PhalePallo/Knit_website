@@ -52,23 +52,23 @@ const TermsOfServicePage: React.FC = () => {
                                 <div id="acceptance" className="bg-white rounded-lg border border-surface-200 p-8 shadow-sm">
                                     <h2 className="flex items-center gap-3 text-2xl font-bold text-brand-950 mb-6">
                                         <CheckCircle className="text-brand-600" size={28} />
-                                        1. Introduction and Acceptance
+                                        1. INTRODUCTION AND ACCEPTANCE
                                     </h2>
                                     <div className="space-y-4 text-slate-600">
                                         <p className="leading-relaxed">
-                                            <strong>1.1 These Website Terms and Conditions ("Website Terms")</strong> govern access to and use of the website operated by Knit Group (Pty) Ltd, a company registered in the Republic of South Africa ("Knit", "we", "us", or "our").
+                                            1.1 These Website Terms and Conditions ("Website Terms") govern access to and use of the website operated by Knit Group (Pty) Ltd, a company registered in the Republic of South Africa ("Knit", "we", "us", or "our").
                                         </p>
                                         <p className="leading-relaxed">
-                                            <strong>1.2 By accessing, browsing, or using this website, you confirm that you have read, understood, and agree to be bound by these Website Terms.</strong> If you do not agree with these Website Terms, you must not use this website.
+                                            1.2 By accessing, browsing, or using this website, you confirm that you have read, understood, and agree to be bound by these Website Terms. If you do not agree with these Website Terms, you must not use this website.
                                         </p>
                                         <p className="leading-relaxed">
-                                            <strong>1.3 These Website Terms apply solely to the use of the website and do not govern the use of Knit's software platform or services, which are governed separately by contractual agreements, including Common Terms Agreement and applicable Service Schedules.</strong>
+                                            1.3 Nothing on this website constitutes an offer to provide services except where expressly agreed in writing.
                                         </p>
                                         <p className="leading-relaxed">
-                                            <strong>1.4 In the event of any inconsistency between these Website Terms and any signed agreement governing the provision of services by Knit, the signed agreement shall prevail.</strong>
+                                            1.4 These Website Terms apply solely to use of the website and do not govern use of Knit's software platform or services, which are governed separately by contractual agreements, including as Common Terms Agreement and applicable Service Schedules.
                                         </p>
                                         <p className="leading-relaxed">
-                                            <strong>1.5 Nothing on this website constitutes an offer to provide services except where expressly agreed in writing.</strong>
+                                            1.5 In the event of any inconsistency between these Website Terms and any signed agreement governing as provision of services by Knit, the signed agreement shall prevail.
                                         </p>
                                     </div>
                                 </div>
@@ -77,17 +77,23 @@ const TermsOfServicePage: React.FC = () => {
                                 <div id="contractual" className="bg-white rounded-lg border border-surface-200 p-8 shadow-sm">
                                     <h2 className="flex items-center gap-3 text-2xl font-bold text-brand-950 mb-6">
                                         <FileText className="text-brand-600" size={28} />
-                                        2. Relationship to Contractual Agreements
+                                        2. RELATIONSHIP TO CONTRACTUAL AGREEMENTS
                                     </h2>
                                     <div className="space-y-4 text-slate-600">
                                         <p className="leading-relaxed">
-                                            <strong>2.1 Any access to or use of Knit's software platform or services is subject to a separate written agreement entered into between Knit and a customer (including Common Terms Agreement and any applicable Service Schedules).</strong>
+                                            2.1 Any access to or use of Knit's software platform or services is subject to a separate written agreement entered into between Knit and a customer (including Common Terms Agreement and any applicable Service Schedules).
                                         </p>
                                         <p className="leading-relaxed">
-                                            <strong>2.2 In the event of any inconsistency between these Website Terms and any signed agreement governing the provision of services by Knit, the signed agreement shall prevail.</strong>
+                                            2.2 In the event of any inconsistency between these Website Terms and any signed agreement governing as provision of services by Knit, the signed agreement shall prevail.
                                         </p>
                                         <p className="leading-relaxed">
-                                            <strong>2.3 Nothing on this website constitutes an offer to provide services except where expressly agreed in writing.</strong>
+                                            2.3 Nothing on this website constitutes legal advice, financial advice, regulatory advice, or professional advice of any kind.
+                                        </p>
+                                        <p className="leading-relaxed">
+                                            2.4 You should not rely on information on this website as a substitute for independent professional advice.
+                                        </p>
+                                        <p className="leading-relaxed">
+                                            2.5 Knit makes no representations or warranties regarding outcomes, performance, suitability, or compliance based solely on information contained on the website.
                                         </p>
                                     </div>
                                 </div>
