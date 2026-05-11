@@ -253,18 +253,6 @@ const TermsOfServicePage: React.FC = () => {
                                 {/* Section 11 */}
                                 <div id="liability" className="bg-white rounded-lg border border-surface-200 p-8 shadow-sm">
                                     <h2 className="flex items-center gap-3 text-2xl font-bold text-brand-950 mb-6">
-                                        <AlertTriangle className="text-brand-600" size={28} />
-                                        11. Limitation of Liability
-                                    </h2>
-                                    <div className="space-y-4 text-slate-600">
-                                        <p className="leading-relaxed">
-                                            <strong>11.1 To the maximum extent permitted by South African law, Knit shall not be liable for any loss, damage, or expense arising from:</strong>
-                                        </p>
-                                        <ul className="list-disc pl-6 space-y-2 ml-6">
-                                            <li>use of or reliance on this website;</li>
-                                            <li>inability to access or use of the website;</li>
-                                            <li>errors or omissions in website content;</li>
-                                        </ul>
                                         <p className="leading-relaxed">
                                             <strong>11.2 Nothing in these Website Terms limits liability that cannot lawfully be excluded.</strong>
                                         </p>
@@ -325,6 +313,20 @@ const TermsOfServicePage: React.FC = () => {
                                     <p className="text-slate-600 mb-6">
                                         If you have any questions about these Terms, please contact us.
                                     </p>
+                                    <div className="space-y-2">
+                                        <p className="text-slate-600">
+                                            <strong>Physical Address:</strong><br />
+                                            Rosebank Zone, Johannesburg, South Africa
+                                        </p>
+                                        <p className="text-slate-600">
+                                            <strong>Email:</strong><br />
+                                            info@knit.cash
+                                        </p>
+                                        <p className="text-slate-600">
+                                            <strong>Phone:</strong><br />
+                                            +27 10 141 2770
+                                        </p>
+                                    </div>
                                     <Link 
                                         to="/contact" 
                                         className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors"
