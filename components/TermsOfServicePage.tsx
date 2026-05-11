@@ -259,10 +259,13 @@ const TermsOfServicePage: React.FC = () => {
                                 {/* Section 11 */}
                                 <div id="liability" className="bg-white rounded-lg border border-surface-200 p-8 shadow-sm">
                                     <h2 className="flex items-center gap-3 text-2xl font-bold text-brand-950 mb-6">
+                                        11. Liability Limitations
+                                    </h2>
+                                    <div className="space-y-4 text-slate-600">
                                         <p className="leading-relaxed">
                                             <strong>11.2 Nothing in these Website Terms limits liability that cannot lawfully be excluded.</strong>
                                         </p>
-                                    </h2>
+                                    </div>
                                 </div>
 
                                 {/* Section 12 */}
