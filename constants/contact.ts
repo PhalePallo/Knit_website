@@ -1,7 +1,6 @@
 export const CONTACT_CONFIG = {
   EMAIL: 'info@knit.cash',
   PHONE: '+27 12 345 6789',
-  ADDRESS: '123 School Street, Centurion, South Africa',
   HOURS: 'Monday - Friday: 8:00 AM - 5:00 PM',
 } as const;
 

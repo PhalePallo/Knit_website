@@ -36,7 +36,7 @@ const KnitWorkflowDemo: React.FC<KnitWorkflowDemoProps> = ({ compact = false, he
     // Auto-typing effect for the input
     useEffect(() => {
         if (phase === 'input') {
-            const text = "I run a private school in Centurion with 850 students. I need to automate tuition recovery and manage annual enrollments.";
+            const text = "I run a private school with 850 students. I need to automate tuition recovery and manage annual enrollments.";
             let i = 0;
             const timer = setInterval(() => {
                 setInputValue(text.substring(0, i + 1));
@@ -321,7 +321,7 @@ const KnitWorkflowDemo: React.FC<KnitWorkflowDemoProps> = ({ compact = false, he
                             <div className="mt-8 bg-surface-950 rounded-lg p-4 font-mono text-xs text-surface-400 h-32 overflow-hidden border border-surface-800 shadow-inner">
                                 <div className="text-emerald-500 mb-1">[14:22:01] INFRA: Allocating VPC in region af-south-1</div>
                                 <div className="text-brand-400 mb-1">[14:22:04] DATA: Initializing academic year clusters...</div>
-                                <div className="text-slate-400 mb-1">[14:22:08] SEC: SSL certificates issued for *.centurion-edu.knit.cloud</div>
+                                <div className="text-slate-400 mb-1">[14:22:08] SEC: SSL certificates issued for *.school.knit.cloud</div>
                                 <div className="text-blue-400 mb-1 animate-pulse">[14:22:12] APP: Mounting bursar dashboard templates...</div>
                             </div>
                         </div>
