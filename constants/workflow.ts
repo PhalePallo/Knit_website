@@ -1,5 +1,5 @@
 export const WORKFLOW_TEXT = {
-  AUTO_TYPE_MESSAGE: "I run a private school in Centurion with 850 students. I need to automate tuition recovery and manage annual enrollments.",
+  AUTO_TYPE_MESSAGE: "I run a private school with 850 students. I need to automate tuition recovery and manage annual enrollments.",
   AUTO_TYPE_SPEED: 50,
   PROCESSING_DELAY: 1000,
   LOG_DELAY: 1500,
