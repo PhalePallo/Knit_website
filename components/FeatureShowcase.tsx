@@ -348,7 +348,7 @@ const FeatureShowcase = () => {
                             <div className="flex gap-4">
                                 {/* Icon Box */}
                                 <div className={`
-                  w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5 transition-colors duration-300
+                   w-8 h-8 rounded-xl flex items-center justify-center shrink-0 mt-0.5 transition-colors duration-300
                   ${activeTab === idx ? 'bg-brand-400 text-brand-950' : 'bg-brand-900 text-brand-400 group-hover:bg-brand-800'}
                 `}>
                                     {feature.icon || <div className="w-1.5 h-1.5 bg-current rounded-full"></div>}

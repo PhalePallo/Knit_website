@@ -90,7 +90,7 @@ function formatText(text: string): React.ReactNode[] {
                 href={match[2]}
                 target={match[2].startsWith('/') ? '_self' : '_blank'}
                 rel="noopener noreferrer"
-                className="text-brand-600 hover:text-brand-800 underline font-medium"
+                className="text-brand-600 hover:text-brand-700 underline font-medium"
             >
                 {match[1]}
             </a>
@@ -232,37 +232,35 @@ const Chatbot: React.FC = () => {
             {isOpen && (
                 <div className="mb-4 w-[350px] sm:w-[400px] h-[550px] max-h-[80vh] bg-white rounded-2xl shadow-2xl border border-surface-200 flex flex-col overflow-hidden animate-in slide-in-from-bottom-10 fade-in duration-300">
 
-                    {/* Header */}
-                    <div className="bg-brand-950 p-4 flex items-center justify-between shrink-0">
+                    <div className="bg-slate-900 p-4 flex items-center justify-between shrink-0">
                         <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded-full bg-brand-800 flex items-center justify-center border border-brand-700">
-                                <Sparkles size={16} className="text-brand-300" />
+                            <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700">
+                                <Sparkles size={16} className="text-blue-300" />
                             </div>
                             <div>
                                 <h3 className="text-white font-semibold text-sm">Knit Assistant</h3>
                                 <div className="flex items-center gap-1.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                                    <span className="text-xs text-brand-300 font-mono">Online</span>
+                                    <span className="text-xs text-slate-400">Online</span>
                                 </div>
                             </div>
                         </div>
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="text-brand-300 hover:text-white transition-colors p-1"
+                            className="text-slate-400 hover:text-white transition-colors p-1"
                         >
                             <X size={20} />
                         </button>
                     </div>
 
-                    {/* Messages Area */}
                     <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-surface-50 scroll-smooth">
                         {messages.map((msg, idx) => (
                             <div key={idx}>
                                 <div className={`flex gap-3 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
                                     <div
                                         className={`w-8 h-8 rounded-full flex shrink-0 items-center justify-center border ${msg.role === 'user'
-                                            ? 'bg-white border-surface-200 text-brand-600'
-                                            : 'bg-brand-100 border-brand-200 text-brand-700'
+                                            ? 'bg-white border-surface-200 text-blue-600'
+                                            : 'bg-blue-100 border-blue-200 text-blue-700'
                                             }`}
                                     >
                                         {msg.role === 'user' ? <User size={14} /> : <Bot size={14} />}
@@ -270,7 +268,7 @@ const Chatbot: React.FC = () => {
 
                                     <div
                                         className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-sm ${msg.role === 'user'
-                                            ? 'bg-brand-600 text-white rounded-tr-sm'
+                                            ? 'bg-blue-600 text-white rounded-tr-sm'
                                             : 'bg-white border border-surface-200 text-slate-700 rounded-tl-sm'
                                             }`}
                                     >
@@ -280,7 +278,6 @@ const Chatbot: React.FC = () => {
                                     </div>
                                 </div>
 
-                                {/* Suggestion Chips */}
                                 {msg.role === 'assistant' && msg.suggestions && msg.suggestions.length > 0 && idx === messages.length - 1 && (
                                     <div className="flex flex-wrap gap-1.5 mt-2 ml-11">
                                         {msg.suggestions.map((s, sIdx) => (
@@ -288,7 +285,7 @@ const Chatbot: React.FC = () => {
                                                 key={sIdx}
                                                 onClick={() => handleChipClick(s)}
                                                 disabled={isLoading}
-                                                className="px-3 py-1.5 text-xs font-medium bg-brand-50 text-brand-700 border border-brand-200 rounded-full hover:bg-brand-100 hover:border-brand-300 transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                                                className="px-3 py-1.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded-full hover:bg-blue-100 hover:border-blue-300 transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                                             >
                                                 {s}
                                             </button>
@@ -298,23 +295,21 @@ const Chatbot: React.FC = () => {
                             </div>
                         ))}
 
-                        {/* Loading Indicator */}
                         {isLoading && (
                             <div className="flex gap-3">
-                                <div className="w-8 h-8 rounded-full bg-brand-100 border border-brand-200 text-brand-700 flex shrink-0 items-center justify-center">
+                                <div className="w-8 h-8 rounded-full bg-blue-100 border border-blue-200 text-blue-700 flex shrink-0 items-center justify-center">
                                     <Bot size={14} />
                                 </div>
                                 <div className="bg-white border border-surface-200 px-4 py-3 rounded-2xl rounded-tl-sm shadow-sm flex items-center gap-1.5">
-                                    <span className="w-1.5 h-1.5 bg-brand-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
-                                    <span className="w-1.5 h-1.5 bg-brand-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
-                                    <span className="w-1.5 h-1.5 bg-brand-400 rounded-full animate-bounce"></span>
+                                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+                                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+                                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce"></span>
                                 </div>
                             </div>
                         )}
                         <div ref={messagesEndRef} />
                     </div>
 
-                    {/* Input Area */}
                     <div className="p-4 bg-white border-t border-surface-200 shrink-0">
                         <div className="relative">
                             <input
@@ -325,13 +320,13 @@ const Chatbot: React.FC = () => {
                                 onKeyDown={handleKeyPress}
                                 placeholder="Ask about pricing, features, demo..."
                                 maxLength={1000}
-                                className="w-full pl-4 pr-12 py-3 bg-surface-50 border border-surface-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 text-sm text-slate-700 placeholder:text-slate-400 transition-all"
+                                className="w-full pl-4 pr-12 py-3 bg-surface-50 border border-surface-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-sm text-slate-700 placeholder:text-slate-400 transition-all"
                                 disabled={isLoading}
                             />
                             <button
                                 onClick={() => sendMessage(inputValue)}
                                 disabled={!inputValue.trim() || isLoading}
-                                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-sm"
+                                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-sm"
                             >
                                 <Send size={16} />
                             </button>
@@ -348,7 +343,7 @@ const Chatbot: React.FC = () => {
             {/* Floating Button */}
             <button
                 onClick={toggleChat}
-                className={`group flex items-center justify-center w-14 h-14 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${isOpen ? 'bg-white text-slate-700 border border-surface-400 rotate-90' : 'bg-brand-600 text-white'
+                className={`group flex items-center justify-center w-14 h-14 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${isOpen ? 'bg-white text-slate-700 border border-surface-400 rotate-90' : 'bg-blue-600 text-white'
                     }`}
             >
                 {isOpen ? <X size={24} /> : <MessageSquare size={24} className="group-hover:animate-pulse" />}

@@ -232,8 +232,8 @@ const KnitWorkflowDemo: React.FC<KnitWorkflowDemoProps> = ({ compact = false, he
                                                         <span className="text-[10px] font-mono text-slate-400">{log.time}</span>
                                                     </div>
                                                     {log.id === '1' && (
-                                                        <div className="text-xs text-slate-500 font-mono">
-                                                            Initializing PostgreSQL tables for 850 students. Mapping fields: <span className="bg-surface-100 text-brand-600 px-1 rounded">student_id</span>, <span className="bg-surface-100 text-brand-600 px-1 rounded">parent_kyc</span>
+                        <div className="text-xs text-slate-500 font-mono">
+                            Initializing PostgreSQL tables for 850 students. Mapping fields: <span className="bg-surface-100 text-brand-600 px-1 rounded">student_id</span>, <span className="bg-surface-100 text-brand-600 px-1 rounded">parent_kyc</span>
                                                         </div>
                                                     )}
                                                     {log.id === '2' && (

@@ -11,11 +11,11 @@ const PricingPage: React.FC = () => {
 
             <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
                 <ScrollReveal>
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 border border-brand-100 text-brand-700 text-[10px] font-mono uppercase tracking-widest mb-6 rounded-full shadow-sm">
-                        <span className="w-1.5 h-1.5 bg-brand-600 rounded-full animate-pulse"></span>
+                    <div className="badge-toddle bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100 text-blue-700 mb-6">
+                        <span className="w-1.5 h-1.5 bg-blue-600 rounded-full animate-pulse"></span>
                         Flexible Pricing
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-bold text-brand-950 tracking-tight mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight mb-6">
                         Infrastructure that scales with you.
                     </h1>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-16 leading-relaxed">
@@ -23,18 +23,16 @@ const PricingPage: React.FC = () => {
                     </p>
                 </ScrollReveal>
 
-                {/* Pricing Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-                    {/* Starter */}
                     <ScrollReveal delay={100}>
-                        <div className="bg-white border border-surface-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group h-full">
-                            <h3 className="text-xl font-bold text-brand-950 mb-2">Basic</h3>
+                        <div className="bg-white border border-surface-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group h-full card-hover">
+                            <h3 className="text-xl font-bold text-slate-900 mb-2">Basic</h3>
                             <p className="text-sm text-slate-500 mb-6">for small institutions</p>
                             <div className="flex items-baseline gap-1 mb-8">
-                                <span className="text-4xl font-bold text-brand-950">R 2,500</span>
-                                <span className="text-slate-500">/mo</span>
+                                <span className="text-4xl font-bold text-slate-900">R 2,500</span>
+                                <span className="text-slate-400">/mo</span>
                             </div>
-                            <div className="mb-8 font-mono text-xs text-brand-700 bg-brand-50 p-3 rounded border border-brand-100">
+                            <div className="mb-8 font-mono text-xs text-brand-700 bg-brand-50 p-3 rounded-xl border border-brand-100">
                                 1.5% per successful transaction
                             </div>
 
@@ -51,25 +49,24 @@ const PricingPage: React.FC = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <a href="https://wa.me/27659520478" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-4 bg-white border border-brand-200 text-brand-900 text-center font-bold text-sm rounded shadow-sm hover:bg-brand-50 transition-colors">
+                            <a href="https://wa.me/27659520478" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-4 bg-white border border-brand-200 text-slate-900 text-center font-bold text-sm rounded-xl shadow-sm hover:bg-brand-50 transition-all hover:-translate-y-0.5">
                                 Get Started
                             </a>
                         </div>
                     </ScrollReveal>
 
-                    {/* Growth */}
                     <ScrollReveal delay={200}>
-                        <div className="bg-brand-950 border border-brand-800 rounded-2xl p-8 shadow-2xl relative transform md:-translate-y-4 h-full">
+                        <div className="bg-brand-900 border border-brand-800 rounded-3xl p-8 shadow-2xl relative transform md:-translate-y-4 h-full card-hover">
                             <div className="absolute top-0 right-0 p-4">
-                                <span className="bg-brand-600 text-white text-[10px] uppercase font-bold px-2 py-1 rounded">Popular</span>
+                                <span className="bg-brand-500 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-full">Popular</span>
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Growth</h3>
-                            <p className="text-white text-sm mb-6">for growth institutions</p>
+                            <p className="text-white/70 text-sm mb-6">for growth institutions</p>
                             <div className="flex items-baseline gap-1 mb-8">
                                 <span className="text-4xl font-bold text-white">R 4,000</span>
-                                <span className="text-brand-400">/mo</span>
+                                <span className="text-brand-300">/mo</span>
                             </div>
-                            <div className="mb-8 font-mono text-xs text-white bg-brand-900 p-3 rounded border border-brand-800">
+                            <div className="mb-8 font-mono text-xs text-brand-200 bg-brand-800 p-3 rounded-xl border border-brand-700">
                                 1.2% per successful transaction
                             </div>
 
@@ -83,25 +80,24 @@ const PricingPage: React.FC = () => {
                                     'API Access'
                                 ].map((feature, i) => (
                                     <li key={`growth-${i}`} className="flex items-center gap-3 text-sm text-brand-100">
-                                        <Check size={16} className="text-brand-500 shrink-0" /> {feature}
+                                        <Check size={16} className="text-brand-400 shrink-0" /> {feature}
                                     </li>
                                 ))}
                             </ul>
-                            <a href="https://wa.me/27659520478" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-4 bg-brand-600 text-white text-center font-bold text-sm rounded shadow-lg hover:bg-brand-500 transition-colors">
+                            <a href="https://wa.me/27659520478" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-4 bg-brand-500 text-white text-center font-bold text-sm rounded-xl shadow-lg hover:bg-brand-400 transition-all hover:-translate-y-0.5">
                                 Start Free Trial
                             </a>
                         </div>
                     </ScrollReveal>
 
-                    {/* Enterprise */}
                     <ScrollReveal delay={300}>
-                        <div className="bg-white border border-surface-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full">
-                            <h3 className="text-xl font-bold text-brand-950 mb-2">Enterprise</h3>
+                        <div className="bg-white border border-surface-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full card-hover">
+                            <h3 className="text-xl font-bold text-slate-900 mb-2">Enterprise</h3>
                             <p className="text-sm text-slate-500 mb-6">for large institutions</p>
                             <div className="flex items-baseline gap-1 mb-8">
-                                <span className="text-4xl font-bold text-brand-950">Custom</span>
+                                <span className="text-4xl font-bold text-slate-900">Custom</span>
                             </div>
-                            <div className="mb-8 font-mono text-xs text-slate-600 bg-surface-50 p-3 rounded border border-surface-200">
+                            <div className="mb-8 font-mono text-xs text-slate-600 bg-surface-50 p-3 rounded-xl border border-surface-200">
                                 Volume-based discounts
                             </div>
 
@@ -119,7 +115,7 @@ const PricingPage: React.FC = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <a href="https://wa.me/27659520478" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-4 bg-white border border-brand-200 text-brand-900 text-center font-bold text-sm rounded shadow-sm hover:bg-brand-50 transition-colors">
+                            <a href="https://wa.me/27659520478" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-4 bg-white border border-brand-200 text-slate-900 text-center font-bold text-sm rounded-xl shadow-sm hover:bg-brand-50 transition-all hover:-translate-y-0.5">
                                 Book a Demo
                             </a>
                         </div>
@@ -127,25 +123,24 @@ const PricingPage: React.FC = () => {
                 </div>
             </div>
 
-            {/* Feature Comparison */}
             <div className="bg-surface-50 py-24 border-t border-surface-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <ScrollReveal>
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl font-bold text-brand-950 mb-4">Compare Features</h2>
+                            <h2 className="text-3xl font-bold text-slate-900 mb-4">Compare Features</h2>
                             <p className="text-slate-600">Detailed breakdown of what's included.</p>
                         </div>
                     </ScrollReveal>
 
                     <ScrollReveal delay={200}>
-                        <div className="overflow-x-auto">
+                        <div className="overflow-x-auto rounded-2xl border border-surface-200">
                             <table className="w-full text-sm text-left">
                                 <thead>
-                                    <tr className="border-b border-surface-200">
+                                    <tr className="border-b border-surface-200 bg-surface-50">
                                         <th className="py-4 px-6 text-slate-500 font-medium w-1/4">Feature</th>
-                                        <th className="py-4 px-6 text-brand-950 font-bold w-1/4">Basic</th>
-                                        <th className="py-4 px-6 text-brand-950 font-bold w-1/4 bg-brand-50/50">Growth</th>
-                                        <th className="py-4 px-6 text-brand-950 font-bold w-1/4">Enterprise</th>
+                                        <th className="py-4 px-6 text-slate-900 font-bold w-1/4">Basic</th>
+                                        <th className="py-4 px-6 text-slate-900 font-bold w-1/4 bg-brand-50/50">Growth</th>
+                                        <th className="py-4 px-6 text-slate-900 font-bold w-1/4">Enterprise</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-surface-200 bg-white">
