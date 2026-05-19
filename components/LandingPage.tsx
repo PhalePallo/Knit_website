@@ -73,6 +73,7 @@ const LandingPage: React.FC = () => {
                 {/* Hero Section */}
                 <section id="knit-architect" className="relative pt-32 pb-32 lg:pt-40 lg:pb-40 overflow-hidden bg-white">
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 opacity-50"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
                     <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl animate-drift"></div>
                     <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl animate-drift animation-delay-2000"></div>
@@ -246,6 +247,8 @@ const LandingPage: React.FC = () => {
 
                 {/* Platform Section */}
                 <section id="platform" className="py-28 lg:py-32 bg-gradient-to-b from-white to-slate-50 overflow-hidden relative">
+                    <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-200/30 rounded-full blur-[100px] animate-pulse-slow"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                         <ScrollReveal>
                             <div className="text-center mb-16 max-w-3xl mx-auto">
