@@ -75,7 +75,9 @@ const ContactForm: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-brand-950">Address</h3>
-                <p className="text-slate-600">{CONTACT_CONFIG.ADDRESS}</p>
+                {CONTACT_CONFIG.ADDRESS.split('\n').map((line, i) => (
+                  <p key={i} className="text-slate-600">{line}</p>
+                ))}
               </div>
             </div>
 

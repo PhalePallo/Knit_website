@@ -1,7 +1,8 @@
 export const CONTACT_CONFIG = {
   EMAIL: 'info@knit.cash',
-  PHONE: '+27 12 345 6789',
+  PHONE: '+27 10 141 2770',
   HOURS: 'Monday - Friday: 8:00 AM - 5:00 PM',
+  ADDRESS: 'The Zone @ Rosebank\nRosebank, Johannesburg\nGauteng, South Africa',
 } as const;
 
 export const FORM_FIELDS = {
@@ -43,7 +44,7 @@ export const FORM_FIELDS = {
   MESSAGE: {
     id: 'message',
     label: 'Message',
-    placeholder: 'Tell us about your school and current challenges with fee collection or financial management',
+    placeholder: '',
     required: true,
     maxLength: 500,
   },

@@ -1,280 +1,93 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/PhalePallo/Knit_website/main/public/knit-logo.png" alt="Knit Logo" width="200" />
-  <h1>Knit - AI Financial Infrastructure</h1>
-  <p>Next-generation financial infrastructure for schools and businesses powered by AI</p>
-</div>
+# knitWebsite
 
-## 🚀 Overview
 
-Knit provides AI-powered financial infrastructure specifically designed for educational institutions and businesses. Our platform automates payment recovery, risk assessment, and financial workflows with intelligent automation.
 
-### ✨ Key Features
+## Getting started
 
-- **AI-Powered Automation**: Intelligent payment recovery and risk assessment
-- **School Management Integration**: Seamless integration with existing school systems
-- **Compliance-First**: Built with South African regulatory standards (SASA, POPIA, NCR)
-- **Real-Time Dashboard**: Live financial insights and analytics
-- **Multi-Channel Communication**: WhatsApp, email, and SMS automation
+To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-## 🛠️ Technology Stack
+Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
-- **Frontend**: React 18 + TypeScript + Vite
-- **Styling**: Tailwind CSS + shadcn/ui components
-- **State Management**: React Hooks + Context API
-- **Charts**: Recharts for data visualization
-- **Communication**: EmailJS for contact forms
-- **Deployment**: Optimized for Vercel/Netlify
+## Add your files
 
-## 📦 Installation
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn package manager
-
-### Quick Start
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/PhalePallo/Knit-website.git
-   cd Knit-website
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Environment setup**
-   ```bash
-   cp .env.example .env.local
-   # Add your API keys to .env.local
-   ```
-
-4. **Run development server**
-   ```bash
-   npm run dev
-   ```
-
-5. **Open your browser**
-   Navigate to `http://localhost:3000`
-
-## 🏗️ Project Structure
+- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
 
 ```
-knit---ai-financial-infrastructure/
-├── components/           # React components
-│   ├── contact/         # Contact form components
-│   └── workflow/        # Workflow demo components
-├── constants/           # Configuration constants
-├── hooks/              # Custom React hooks
-├── types/              # TypeScript type definitions
-├── public/             # Static assets
-└── src/                # Source files
+cd existing_repo
+git remote add origin https://gitlab.com/MissRea09/knitwebsite.git
+git branch -M main
+git push -uf origin main
 ```
 
-## 🧩 Component Architecture
+## Integrate with your tools
 
-### Modular Components
+- [ ] [Set up project integrations](https://gitlab.com/MissRea09/knitwebsite/-/settings/integrations)
 
-- **KnitWorkflowDemo**: Interactive demonstration of platform capabilities
-- **ContactForm**: Modular contact form with validation
-- **WorkflowLogCard**: Reusable log display component
-- **WorkflowMilestoneCard**: Progress milestone component
-- **SimpleChart**: Data visualization component
+## Collaborate with your team
 
-### Custom Hooks
+- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
 
-- **useWorkflowDemo**: Manages workflow demonstration state
-- **useContactForm**: Handles form validation and submission
+## Test and Deploy
 
-### Type Definitions
+Use the built-in continuous integration in GitLab.
 
-- **workflow.ts**: Workflow-related TypeScript interfaces
-- **contact.ts**: Contact form type definitions
+- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-## 🔧 Development
+***
 
-### Available Scripts
+# Editing this README
 
-```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
-```
+When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-### Environment Variables
+## Suggestions for a good README
 
-Create a `.env.local` file in the root directory:
+Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-```env
-VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
-VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
-```
+## Name
+Choose a self-explaining name for your project.
 
-## 🎨 Design System
+## Description
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-### Color Palette
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-- **Primary**: Brand colors (#3b82f6, #1e40af)
-- **Secondary**: Surface colors (#f8fafc, #e2e8f0)
-- **Accent**: Emerald (#10b981) for success states
-- **Alert**: Red (#ef4444) for error states
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-### Typography
+## Installation
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-- **Font**: Inter (system font stack)
-- **Headings**: Bold weights (600-800)
-- **Body**: Regular weight (400)
-- **Code**: JetBrains Mono
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-### Components
+## Support
+Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-Built with shadcn/ui design system:
-- Consistent spacing and sizing
-- Accessible color contrasts
-- Responsive design patterns
-- Smooth animations and transitions
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-## 📊 Performance
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
 
-### Bundle Size
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-- **Total**: ~566KB (gzipped: ~148KB)
-- **Components**: Lazy loaded for optimal performance
-- **Images**: Optimized and compressed
-- **Fonts**: System fonts for faster loading
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
-### Optimization
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
 
-- Code splitting with dynamic imports
-- Image optimization with next-gen formats
-- CSS minification and purging
-- Tree shaking for unused code
+## License
+For open source projects, say how it is licensed.
 
-## 🔒 Security
-
-### Content Security Policy
-
-Strict CSP headers configured for:
-- Script execution from trusted sources
-- Font loading from Google Fonts
-- Image loading from same origin and trusted CDNs
-- API calls to approved endpoints
-
-### Data Protection
-
-- No sensitive data in client-side code
-- Environment variables for API keys
-- HTTPS enforcement in production
-- Regular security audits
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Connect your GitHub repository to Vercel
-2. Configure environment variables
-3. Deploy automatically on push to main
-
-### Netlify
-
-1. Connect repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-
-### Docker
-
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 3000
-CMD ["npm", "run", "preview"]
-```
-
-## 🧪 Testing
-
-### Component Testing
-
-```bash
-npm run test        # Run unit tests
-npm run test:watch  # Watch mode
-npm run test:cover  # Coverage report
-```
-
-### E2E Testing
-
-```bash
-npm run test:e2e    # Playwright tests
-npm run test:e2e:ui # Visual testing
-```
-
-## 📈 Monitoring
-
-### Performance Metrics
-
-- Core Web Vitals monitoring
-- Bundle size tracking
-- Error reporting and logging
-- User analytics integration
-
-### SEO Optimization
-
-- Meta tags and structured data
-- Open Graph and Twitter cards
-- XML sitemaps
-- Robots.txt configuration
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Code Standards
-
-- Follow TypeScript strict mode
-- Use ESLint and Prettier configurations
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-- **Email**: info@knit.cash
-- **Phone**: +27 10 141 2770
-- **Website**: https://www.knit.cash
-- **Documentation**: https://docs.knit.cash
-
-## 🗺️ Roadmap
-
-### Q3 2024
-- [ ] Advanced AI predictions
-- [ ] Mobile app development
-- [ ] Enhanced reporting dashboard
-- [ ] Multi-currency support
-
-### Q4 2024
-- [ ] API public release
-- [ ] Third-party integrations
-- [ ] Advanced analytics
-- [ ] Enterprise features
-
----
-
-<div align="center">
-  <p>Built with ❤️ for educational institutions in South Africa</p>
-  <p>© 2024 Knit Financial Infrastructure</p>
-</div>
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.

@@ -220,9 +220,9 @@ const RiskSimulator: React.FC = () => {
                         <span className="text-6xl font-mono font-light text-brand-950 tracking-tighter tabular-nums animate-in zoom-in duration-300">{analysis.riskScore}</span>
                         <div className="flex flex-col">
                           <span className="text-sm font-mono text-slate-400">/ 100</span>
-                          <span className={`text-[10px] font-bold uppercase px-1.5 py-0.5 rounded-sm mt-1 border animate-in slide-in-from-left-2 duration-300 delay-100 ${analysis.riskLevel === 'High' || analysis.riskLevel === 'Critical'
-                            ? 'bg-red-50 text-red-700 border-red-100'
-                            : 'bg-amber-50 text-amber-700 border-amber-100'
+                            <span className={`text-[10px] font-bold uppercase px-1.5 py-0.5 rounded-md mt-1 border animate-in slide-in-from-left-2 duration-300 delay-100 ${analysis.riskLevel === 'High' || analysis.riskLevel === 'Critical'
+                                ? 'bg-red-50 text-red-700 border-red-100'
+                                : 'bg-amber-50 text-amber-700 border-amber-100'
                             }`}>
                             {analysis.riskLevel} Level
                           </span>

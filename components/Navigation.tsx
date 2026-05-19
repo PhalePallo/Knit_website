@@ -108,63 +108,58 @@ const Navigation: React.FC = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 border-b ${isScrolled
-        ? 'bg-white/95 backdrop-blur-sm border-surface-200 py-3'
-        : 'bg-white/50 border-transparent py-5'
+        ? 'bg-white/95 backdrop-blur-sm border-slate-200 py-4'
+        : 'bg-white/50 border-transparent py-6'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Logo */}
         <div
           onClick={(e) => handleNavigation(e, '/')}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <img src="/knit-logo.png" alt="Knit Logo" className="h-28 w-auto" />
+          <img src="/knit-logo.png" alt="Knit Logo" className="h-20 w-auto" />
         </div>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavigation(e, link.href)}
-              className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors"
+              className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors"
             >
               {link.name}
             </a>
           ))}
         </div>
 
-        {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <button
             onClick={(e) => handleNavigation(e, '/contact')}
-            className="text-sm font-medium text-slate-900 hover:text-brand-600 bg-brand-50 px-4 py-2 rounded border border-brand-100"
+            className="text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all shadow-md hover:shadow-lg"
           >
             Book a Demo
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-slate-900 hover:text-brand-600 p-2"
+            className="text-slate-900 hover:text-blue-600 p-2"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-surface-200 shadow-xl p-4 flex flex-col space-y-4 animate-in fade-in slide-in-from-top-5">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-200 shadow-xl p-4 flex flex-col space-y-4 animate-in fade-in slide-in-from-top-5">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavigation(e, link.href)}
-              className="text-base font-medium text-slate-700 hover:text-brand-600 px-2 py-2 block border-b border-slate-50"
+              className="text-base font-semibold text-slate-700 hover:text-blue-600 px-2 py-2 block border-b border-slate-50"
             >
               {link.name}
             </a>
@@ -172,7 +167,7 @@ const Navigation: React.FC = () => {
           <div className="pt-2 flex flex-col gap-3">
             <button
               onClick={(e) => handleNavigation(e, '/contact')}
-              className="w-full text-slate-900 font-medium py-2 text-left px-2 bg-brand-50 rounded border border-brand-100"
+                              className="w-full text-white font-semibold py-3 text-center px-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl"
             >
               Book a Demo
             </button>

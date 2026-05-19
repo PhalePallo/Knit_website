@@ -86,11 +86,11 @@
           },
           colors: {
             brand: {
-              950: '#020617', // Obsidian
-              900: '#0f172a', // Navy
+              950: '#020617',
+              900: '#0f172a',
               800: '#1e293b',
               700: '#334155',
-              600: '#0f53d6', // Corporate Blue
+              600: '#0f53d6',
               500: '#3b82f6',
               400: '#60a5fa',
               100: '#dbeafe',
@@ -111,6 +111,9 @@
             float: "float 6s ease-in-out infinite",
             flow: "flow 1.5s linear infinite",
             'pulse-slow': "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            'fade-up': "fadeUp 0.6s ease-out forwards",
+            'scale-in': "scaleIn 0.4s ease-out forwards",
+            'drift': "drift 20s ease-in-out infinite",
           },
           keyframes: {
             blob: {
@@ -126,6 +129,20 @@
             flow: {
               "0%": { backgroundPosition: "0 0" },
               "100%": { backgroundPosition: "20px 0" },
+            },
+            fadeUp: {
+              "0%": { opacity: "0", transform: "translateY(24px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+            scaleIn: {
+              "0%": { opacity: "0", transform: "scale(0.95)" },
+              "100%": { opacity: "1", transform: "scale(1)" },
+            },
+            drift: {
+              "0%, 100%": { transform: "translate(0, 0)" },
+              "25%": { transform: "translate(10px, -10px)" },
+              "50%": { transform: "translate(-5px, -15px)" },
+              "75%": { transform: "translate(-10px, 5px)" },
             }
           }
         }
