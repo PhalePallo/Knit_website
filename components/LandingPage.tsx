@@ -209,7 +209,7 @@ const LandingPage: React.FC = () => {
                         <ScrollReveal delay={200}>
                             <div className="mt-20 pt-14 border-t border-slate-200 text-center">
                                 <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-10">Our Strategic Industry Partners</h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
                                     <div className="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all p-8 flex items-center justify-center h-28 md:h-32 card-hover">
                                         <img
                                             src="/sbma-logo.png"
@@ -221,6 +221,13 @@ const LandingPage: React.FC = () => {
                                         <img
                                             src="/fedsas-logo.png"
                                             alt="FEDSAS"
+                                            className="h-14 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                                        />
+                                    </div>
+                                    <div className="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all p-8 flex items-center justify-center h-28 md:h-32 card-hover">
+                                        <img
+                                            src="/Google%20for%20startups.jpeg"
+                                            alt="Google for Startups"
                                             className="h-14 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
                                         />
                                     </div>
