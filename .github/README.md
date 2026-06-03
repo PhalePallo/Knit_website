@@ -1,4 +1,4 @@
-# Knit - AI Financial Infrastructure
+# AI Financial Infrastructure
 
 <div align="center">
   <img src="/knit-logo.png" alt="Knit Logo" width="200" />
@@ -167,11 +167,6 @@ We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBU
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🆘 Support
-
-- **Email**: info@knit.cash
-- **Phone**: +27 10 141 2770
-- **Website**: https://www.knit.cash
-- **Documentation**: https://docs.knit.cash
 
 ---
 
